@@ -6,6 +6,13 @@
 \usage{
 sample_size_2sided_2sample_t_test(cohensd, power, alpha)
 }
+\arguments{
+\item{cohensd}{estimated Cohens-d}
+
+\item{power}{desired statistical power}
+
+\item{alpha}{desired alpha (p-value, alpha level, or type I error rate)}
+}
 \value{
 required number of samples \strong{per group}
 }

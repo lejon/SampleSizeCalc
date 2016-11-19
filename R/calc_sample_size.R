@@ -27,6 +27,7 @@ sample_size_logistic_regression <- function(k, p) {
 #' @param power the desired statistical power level
 #' @param alpha p-value, alpha level, or type I error rate, usually 0.1, 0.05 or 0.01
 #' @param verify should the sample size be 'verified' by simulation using MCMC, this can take a long time (on the order of 15 mins)
+#' @param ... Extra arguments to pass MBESS package
 #'
 #' @return the number of samples needed
 #' @export
@@ -94,6 +95,10 @@ r2_to_cohenf2 <- function(r2) {
 #'
 #' Calculate required sample size for a two sample two sided test
 #'
+#' @param cohensd estimated Cohens-d
+#' @param power desired statistical power
+#' @param alpha desired alpha (p-value, alpha level, or type I error rate)
+#'
 #' @return required number of samples \strong{per group}
 #' @export
 #' @importFrom pwr pwr.t.test
@@ -107,6 +112,10 @@ sample_size_2sided_2sample_t_test <- function(cohensd, power, alpha) {
 #' sample_size_1sided_2sample_t_test
 #'
 #' Calculate required sample size for a two sample one sided test
+#'
+#' @param cohensd estimated Cohens-d
+#' @param power desired statistical power
+#' @param alpha desired alpha (p-value, alpha level, or type I error rate)
 #'
 #' @return required number of samples \strong{per group}
 #' @export

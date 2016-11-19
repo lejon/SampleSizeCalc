@@ -19,6 +19,8 @@ sample_size_multiple_regression(nr_predictors, r2 = 0.2, effect_size = 0.15,
 \item{alpha}{p-value, alpha level, or type I error rate, usually 0.1, 0.05 or 0.01}
 
 \item{verify}{should the sample size be 'verified' by simulation using MCMC, this can take a long time (on the order of 15 mins)}
+
+\item{...}{Extra arguments to pass MBESS package}
 }
 \value{
 the number of samples needed
