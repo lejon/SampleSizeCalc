@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lejon/SampleSizeCalc.svg?branch=master)](https://travis-ci.org/lejon/SampleSizeCalc)
+
 # SampleSizeCalc
 Small R package to calculate sample sizes for various types of statistical procedures. The package is designed to align with [Statcalc](http://www.danielsoper.com/statcalc/).
 
