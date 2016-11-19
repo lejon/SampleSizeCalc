@@ -9,7 +9,7 @@ Small R package to calculate sample sizes for various types of statistical proce
 - Multiple Linear Regression
 - t-tests
 
-See the vignette for more details: [vignette](https://raw.githubusercontent.com/lejon/SampleSizeCalc/master/vignettes/sample_size_calc.html)
+See the vignette for more details: [vignette](http://htmlpreview.github.com/?https://raw.githubusercontent.com/lejon/SampleSizeCalc/master/vignettes/sample_size_calc.html)
 
 # DISCLAIMER
 
