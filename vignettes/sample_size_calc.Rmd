@@ -1,0 +1,44 @@
+---
+title: "Sample Size Calculator"
+author: "Leif Jonsson"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Small helper package for calculating sample sizes for various types of statistical procedures
+The following types are supported at this moment:
+
+- Logistic regression
+- Multiple Linear Regression
+- t-test
+
+## Logistic Regression
+
+Logistic regression with 20 covariates and the least represented class occurs in roughly 20% of the cases
+
+```{r}
+library(SampleSizeCalc)
+sample_size_logistic_regression(20,0.2)
+```
+
+## Multiple Linear Regression
+
+Multiple Linear Regression with 20 covariates r2 = 0.13, power = 0.8 and an alpha of 0.05
+
+```{r}
+sample_size_multiple_regression(20,r2=0.1304348,power=.8,alpha=0.05)
+```
+
+## t-test
+
+A  t-test with Cohens d = 0.5, power = 0.8 and alpha = 0.05
+
+```{r}
+sample_size_2sided_2sample_t_test(0.5,.8,0.05)
+```
+
+
